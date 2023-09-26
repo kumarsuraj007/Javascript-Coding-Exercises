@@ -61,4 +61,47 @@ function evenNum (arr) {
     return newArray
 }
 
-console.log(evenNum(numArr))
+console.log(evenNum(numArr));
+
+// 6. Write a JavaScript program to calculate the factorial of a given number.  
+function factorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+console.log(factorial(10));
+
+// 7. Write a JavaScript function to check if a given number is prime. 
+function isPrime(num) {
+    if (num <= 1) {
+        return false
+    }
+
+    for (let i = 0; i < num; i ++) {
+        if (num % i === 0) {
+            return false
+        }
+    }
+    return true
+}
+
+console.log(isPrime(7))
+
+// 8. Write a JavaScript program to find the largest element in a nested array. 
+let nestedArr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+function findLargestNestedArray (nestedArr) {
+    let max = nestedArr[0][0]
+    for (let i = 0; i < nestedArr.length; i++) {
+        for (let j = 0; j < nestedArr.length; j++) {
+            if (nestedArr[i][j] > max) {
+                max = nestedArr[i][j]
+            }
+        }
+    }
+    return max
+ }
+
+console.log(findLargestNestedArray(nestedArr))
