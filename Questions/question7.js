@@ -1,4 +1,4 @@
-// 9. write the number of same value in the arr 
+// 7. write the number of same value in the arr 
 const arr = ['a', 'b', 'c', 'a', 'a', 'd', 'c'];
 
 let count = {};
